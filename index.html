@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Kamus Lemurian</title>
+    <meta name="description" content="Kamus Lemurian Berdasarkan nama nama anak pemberian Kang Dicky, dibuat oleh ibnux">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
@@ -17,7 +18,8 @@
                         Kamus Lemurian
                     </p>
                     <p class="subtitle">
-                        Berdasarkan nama nama anak pemberian Kang Dicky
+                        Berdasarkan nama nama anak pemberian Kang Dicky<br>
+                        <small class="has-text-grey-light">dibuat oleh Ibnu Maksum (@ibnux)</small>
                     </p>
                 </div>
             </section>
@@ -27,245 +29,320 @@
                     <div class="columns is-mobile is-1">
                         <div class="column">
                             <article class="message is-success">
-                                <div class="message-header p-2">
+                                <div class="message-header p-2" id="nama1">
                                     Argizan
                                 </div>
-                                <div class="message-body p-2">
+                                <div class="message-body p-2" id="artiNama1">
                                     penyelamat
                                 </div>
                             </article>
                         </div>
                         <div class="column">
                             <article class="message is-link">
-                                <div class="message-header p-2">
+                                <div class="message-header p-2" id="nama2">
                                     <p>Argizan</p>
                                 </div>
-                                <div class="message-body p-2">
+                                <div class="message-body p-2" id="artiNama2">
                                     penyelamat
                                 </div>
                             </article>
                         </div>
                         <div class="column">
                             <article class="message is-info">
-                                <div class="message-header p-2">
+                                <div class="message-header p-2" id="nama3">
                                     <p>Argizan</p>
                                 </div>
-                                <div class="message-body p-2">
+                                <div class="message-body p-2" id="artiNama3">
                                     penyelamat
                                 </div>
                             </article>
                         </div>
                     </div>
                     <div align="center">
-                        <button class="button is-fullwidth is-light">Acak lagi</button>
+                        <button class="button is-fullwidth is-light" onclick="generateName()">Acak lagi</button>
                     </div>
                     <hr>
                     <div align="center">
                         <span class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ARGIZAN','PENEMPA MANUSIA')">ARGIZAN</span><span
+                            title="PENEMPA MANUSIA" onclick="showPopUp('ARGIZAN','PENEMPA MANUSIA')">ARGIZAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="WANITA PEMBAWA BERKAH"
                             onclick="showPopUp('MILTRANTIA','WANITA PEMBAWA BERKAH')">MILTRANTIA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MAMPU MENGATUR HARTA"
                             onclick="showPopUp('HANDARTHA','MAMPU MENGATUR HARTA')">HANDARTHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MAMPU MENGATASI PERMASALAHAN"
                             onclick="showPopUp('ATRAVINNA','MAMPU MENGATASI PERMASALAHAN')">ATRAVINNA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENERANG JALAN KEHIDUPAN"
                             onclick="showPopUp('IRVANA','PENERANG JALAN KEHIDUPAN')">IRVANA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENGALAH UNTUK MENANG"
                             onclick="showPopUp('DANTAZA','MENGALAH UNTUK MENANG')">DANTAZA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ARYASATYA','KEMULIAAN')">ARYASATYA</span><span
+                            title="KEMULIAAN" onclick="showPopUp('ARYASATYA','KEMULIAAN')">ARYASATYA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENGENDALI PERASAAN"
                             onclick="showPopUp('DIVTAGEMTRI','PENGENDALI PERASAAN')">DIVTAGEMTRI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MAMPU MENGATASI KEKURANGAN"
                             onclick="showPopUp('GAVAZRAN','MAMPU MENGATASI KEKURANGAN')">GAVAZRAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PANDAI MEMBUAT USAHA"
                             onclick="showPopUp('ARKAVID','PANDAI MEMBUAT USAHA')">ARKAVID</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('VLANEZIA','MENGHARUMKAN')">VLANEZIA</span><span
+                            title="MENGHARUMKAN" onclick="showPopUp('VLANEZIA','MENGHARUMKAN')">VLANEZIA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENARIK KASIH SAYANG"
                             onclick="showPopUp('AZTILAVI','PENARIK KASIH SAYANG')">AZTILAVI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENEROBOS HALANGAN KEBAJIKAN"
                             onclick="showPopUp('AVERINZIA','PENEROBOS HALANGAN KEBAJIKAN')">AVERINZIA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('BIZARGHAN','MEWASPADAI')">BIZARGHAN</span><span
+                            title="MEWASPADAI" onclick="showPopUp('BIZARGHAN','MEWASPADAI')">BIZARGHAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENASEHAT YANG BAIK"
                             onclick="showPopUp('GAZVARMA','PENASEHAT YANG BAIK')">GAZVARMA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('RAGRIZA ','PENANAM KEBAIKAN')">RAGRIZA </span><span
-                            class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENANAM KEBAIKAN" onclick="showPopUp('RAGRIZA ','PENANAM KEBAIKAN')">RAGRIZA
+                        </span><span class="tag is-link is-medium m-1" class="js-modal-trigger"
+                            data-target="modal-js-lemurian" title="PENGUJI YANG BAIK"
                             onclick="showPopUp('RANZAVA','PENGUJI YANG BAIK')">RANZAVA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('AZTAV','PEMBERI PELAJARAN')">AZTAV</span><span
+                            title="PEMBERI PELAJARAN" onclick="showPopUp('AZTAV','PEMBERI PELAJARAN')">AZTAV</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="KEKUATAN BUMI"
                             onclick="showPopUp('AGRAZEMBADA','KEKUATAN BUMI')">AGRAZEMBADA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMANTAPKAN TUJUAN HIDUP"
                             onclick="showPopUp('VARDIGHA','MEMANTAPKAN TUJUAN HIDUP')">VARDIGHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENYUARA RAKYAT"
                             onclick="showPopUp('VARGHANA','PENYUARA RAKYAT')">VARGHANA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SATRIA WANITA"
                             onclick="showPopUp('SREVILANTRIA','SATRIA WANITA')">SREVILANTRIA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENJAGA PERDAMAIAN"
                             onclick="showPopUp('DAMENTRANA','PENJAGA PERDAMAIAN')">DAMENTRANA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SELALU MEMAKLUMI"
                             onclick="showPopUp('MEZITRANI','SELALU MEMAKLUMI')">MEZITRANI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="WARGA YANG BAIK"
                             onclick="showPopUp('PALIVARGA','WARGA YANG BAIK')">PALIVARGA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ZIRDAVIN ','AHLI LOBI')">ZIRDAVIN </span><span
+                            title="AHLI LOBI" onclick="showPopUp('ZIRDAVIN ','AHLI LOBI')">ZIRDAVIN </span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('NEVKA','LURUS HATI')">NEVKA</span><span
+                            title="LURUS HATI" onclick="showPopUp('NEVKA','LURUS HATI')">NEVKA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENANAM YANG HEBAT"
                             onclick="showPopUp('ARZUGHA','PENANAM YANG HEBAT')">ARZUGHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMUKA KEBENARAN"
                             onclick="showPopUp('SAGARIVNA','PEMUKA KEBENARAN')">SAGARIVNA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENYEIMBANG PEMUKA KEBENARAN"
                             onclick="showPopUp('SAGARIVNI','PENYEIMBANG PEMUKA KEBENARAN')">SAGARIVNI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENCARI JALAN KELUAR"
                             onclick="showPopUp('VENINTRI','PENCARI JALAN KELUAR')">VENINTRI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('GARVEDI','PENGUAT JIWA')">GARVEDI</span><span
+                            title="PENGUAT JIWA" onclick="showPopUp('GARVEDI','PENGUAT JIWA')">GARVEDI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="DEWASA DALAM BERSIKAP"
                             onclick="showPopUp('ELDERAVYA ','DEWASA DALAM BERSIKAP')">ELDERAVYA </span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="RAMAH DAN MENOLONG"
                             onclick="showPopUp('RENIZTRIAZ ','RAMAH DAN MENOLONG')">RENIZTRIAZ </span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENANAMKAN SEGALA KEBAIKAN"
                             onclick="showPopUp('ARGARID','MENANAMKAN SEGALA KEBAIKAN')">ARGARID</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="BESAR DAN BERWIBAWA"
                             onclick="showPopUp('ELGANDARA','BESAR DAN BERWIBAWA')">ELGANDARA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title=" MENDIDIK AGAR MENJADI KUAT"
                             onclick="showPopUp('VRAGAMARDHA',' MENDIDIK AGAR MENJADI KUAT')">VRAGAMARDHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="WASPADA TERHADAP HAL KECIL "
                             onclick="showPopUp('MANIQARI ','WASPADA TERHADAP HAL KECIL ')">MANIQARI </span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MAMPU MENYESUAIKAN DENGAN SETIAP PERMASALAHAN"
                             onclick="showPopUp('BANIARIZNI','MAMPU MENYESUAIKAN DENGAN SETIAP PERMASALAHAN')">BANIARIZNI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENELITI SAMPAI MEMAHAMI HIDUP"
                             onclick="showPopUp('EZTAMAVI','MENELITI SAMPAI MEMAHAMI HIDUP')">EZTAMAVI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENJUNJUNG TINGGI PERSAUDARAAN"
                             onclick="showPopUp('VALAGIR','MENJUNJUNG TINGGI PERSAUDARAAN')">VALAGIR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ARNAWAMA','SAMUDERA')">ARNAWAMA</span><span
+                            title="SAMUDERA" onclick="showPopUp('ARNAWAMA','SAMUDERA')">ARNAWAMA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MAHIR MENGENDALIKAN"
                             onclick="showPopUp('OLVANIMTRA','MAHIR MENGENDALIKAN')">OLVANIMTRA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MAMPU MENGUATKAN KEKURANGAN MENJADI KELEBIHAN"
                             onclick="showPopUp('ANAVIARI','MAMPU MENGUATKAN KEKURANGAN MENJADI KELEBIHAN')">ANAVIARI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('DIZGARAZ','MENDUNIA')">DIZGARAZ</span><span
+                            title="MENDUNIA" onclick="showPopUp('DIZGARAZ','MENDUNIA')">DIZGARAZ</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ARDINAZRI','MENYEMANGATI')">ARDINAZRI</span><span
+                            title="MENYEMANGATI" onclick="showPopUp('ARDINAZRI','MENYEMANGATI')">ARDINAZRI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENYAYANGI SEMUA MAHLUK HIDUP"
                             onclick="showPopUp('FANALEVA','MENYAYANGI SEMUA MAHLUK HIDUP')">FANALEVA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="BELAJAR DARI FAKTA"
                             onclick="showPopUp('MENIVRADI','BELAJAR DARI FAKTA')">MENIVRADI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MELIHAT DENGAN TELITI"
                             onclick="showPopUp('AVTARUZENDA','MELIHAT DENGAN TELITI')">AVTARUZENDA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENDAMAI PERSETERUAN"
                             onclick="showPopUp('ZANTARAD','PENDAMAI PERSETERUAN')">ZANTARAD</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMETIK BUAH KEBAIKAN"
                             onclick="showPopUp('IVIRAZI','PEMETIK BUAH KEBAIKAN')">IVIRAZI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMBERI PELAJARAN"
                             onclick="showPopUp('TARZUAGI','PEMBERI PELAJARAN')">TARZUAGI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMBERI SEMANGAT"
                             onclick="showPopUp('RANAGEZ','PEMBERI SEMANGAT')">RANAGEZ</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PELINDUNG KAUM LEMAH"
                             onclick="showPopUp('PHAGADEZA','PELINDUNG KAUM LEMAH')">PHAGADEZA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENGETAHUI SEJAK DINI"
                             onclick="showPopUp('ZHANIAVARI','MENGETAHUI SEJAK DINI')">ZHANIAVARI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="BERGAUL DENGAN ORANG ORANG BAIK"
                             onclick="showPopUp('MIVTRADIZ','BERGAUL DENGAN ORANG ORANG BAIK')">MIVTRADIZ</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="AKTIF MENDAMAIKAN"
                             onclick="showPopUp('KALVANDRA','AKTIF MENDAMAIKAN')">KALVANDRA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMILIKI RASA PERSAUDARAAN TINGGI"
                             onclick="showPopUp('VARGIRIA','MEMILIKI RASA PERSAUDARAAN TINGGI')">VARGIRIA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('DAMASERGI','SELALU TENANG')">DAMASERGI</span><span
+                            title="SELALU TENANG" onclick="showPopUp('DAMASERGI','SELALU TENANG')">DAMASERGI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SANGAT BERKECUKUPAN"
                             onclick="showPopUp('ARTHANEZA','SANGAT BERKECUKUPAN')">ARTHANEZA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('GENAZTRI ','MENYATUKAN')">GENAZTRI </span><span
+                            title="MENYATUKAN" onclick="showPopUp('GENAZTRI ','MENYATUKAN')">GENAZTRI </span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('VANATIAR','AHLI BISNIS')">VANATIAR</span><span
+                            title="AHLI BISNIS" onclick="showPopUp('VANATIAR','AHLI BISNIS')">VANATIAR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMIMPIN KEBAIKAN"
                             onclick="showPopUp('MAZTAVIR','PEMIMPIN KEBAIKAN')">MAZTAVIR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="TAU JALAN TERBAIK"
                             onclick="showPopUp('AVTIARAN','TAU JALAN TERBAIK')">AVTIARAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENCINTAI SEMESTA"
                             onclick="showPopUp('ARAMARHA','MENCINTAI SEMESTA')">ARAMARHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="BERANI KARENA YAKIN"
                             onclick="showPopUp('BRAVIJAVAN','BERANI KARENA YAKIN')">BRAVIJAVAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENERIMA INPUT DENGAN BAIK"
                             onclick="showPopUp('VARDIAMA','MENERIMA INPUT DENGAN BAIK')">VARDIAMA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('TRAZILAR','SANGAT IKHLAS')">TRAZILAR</span><span
+                            title="SANGAT IKHLAS" onclick="showPopUp('TRAZILAR','SANGAT IKHLAS')">TRAZILAR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PILAR UMAT MANUSIA"
                             onclick="showPopUp('FRILARNAD','PILAR UMAT MANUSIA')">FRILARNAD</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('WUSTRABA ','KUAT DAN BAIK')">WUSTRABA </span><span
+                            title="KUAT DAN BAIK" onclick="showPopUp('WUSTRABA ','KUAT DAN BAIK')">WUSTRABA </span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENYELESAI KESULITAN UMAT"
                             onclick="showPopUp('VANTRARIAN','PENYELESAI KESULITAN UMAT')">VANTRARIAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SELALU MENAMBAH KEMAMPUAN"
                             onclick="showPopUp('URVANAR','SELALU MENAMBAH KEMAMPUAN')">URVANAR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('MAZLAR','TIDAK BERLEBIHAN')">MAZLAR</span><span
+                            title="TIDAK BERLEBIHAN" onclick="showPopUp('MAZLAR','TIDAK BERLEBIHAN')">MAZLAR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('KARA','CAHAYA')">KARA</span><span class="tag is-link is-medium m-1"
-                            class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="CAHAYA" onclick="showPopUp('KARA','CAHAYA')">KARA</span><span
+                            class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMBUAT RASA SAYANG"
                             onclick="showPopUp('RANZANAV','MEMBUAT RASA SAYANG')">RANZANAV</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SESUAI DENGAN SEMESTA"
                             onclick="showPopUp('VRAZERHA','SESUAI DENGAN SEMESTA')">VRAZERHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MELURUSKAN TUJUAN"
                             onclick="showPopUp('GARANDAVIR','MELURUSKAN TUJUAN')">GARANDAVIR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="DENGAN TENAGA TANPA BATAS"
                             onclick="showPopUp('BALLARHUNA','DENGAN TENAGA TANPA BATAS')">BALLARHUNA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMBERIKAN YANG TERBAIK"
                             onclick="showPopUp('IFTUVA','MEMBERIKAN YANG TERBAIK')">IFTUVA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMAKLUMI YANG BODOH"
                             onclick="showPopUp('UVTARAMI','MEMAKLUMI YANG BODOH')">UVTARAMI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PANDAI MELIHAT HAL YANG TIDAK BERES"
                             onclick="showPopUp('LAZAVAR','PANDAI MELIHAT HAL YANG TIDAK BERES')">LAZAVAR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('MURDIGA ','PENELUSURAN FAKTA')">MURDIGA </span><span
-                            class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PENELUSURAN FAKTA" onclick="showPopUp('MURDIGA ','PENELUSURAN FAKTA')">MURDIGA
+                        </span><span class="tag is-link is-medium m-1" class="js-modal-trigger"
+                            data-target="modal-js-lemurian" title="PEMBAGI KEBAIKAN"
                             onclick="showPopUp('KARVIDAM','PEMBAGI KEBAIKAN')">KARVIDAM</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ARNAZAV','PENGGEMBLENG')">ARNAZAV</span><span
+                            title="PENGGEMBLENG" onclick="showPopUp('ARNAZAV','PENGGEMBLENG')">ARNAZAV</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ENZARAN','PEMBANGKIT JIWA')">ENZARAN</span><span
+                            title="PEMBANGKIT JIWA" onclick="showPopUp('ENZARAN','PEMBANGKIT JIWA')">ENZARAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="KEBAIKAN MENYELURUH"
                             onclick="showPopUp('GARTABI','KEBAIKAN MENYELURUH')">GARTABI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMBUAT KEPUTUSAN SECARA CEPAT"
                             onclick="showPopUp('DAZTRASIN','MEMBUAT KEPUTUSAN SECARA CEPAT')">DAZTRASIN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEMBIMBING ORANG ORANG BAIK"
                             onclick="showPopUp('TRINZERTHA','MEMBIMBING ORANG ORANG BAIK')">TRINZERTHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMBELA RAKYAT"
                             onclick="showPopUp('TRAVIMADA','PEMBELA RAKYAT')">TRAVIMADA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('MUGALQI','BERMANFAAT')">MUGALQI</span><span
+                            title="BERMANFAAT" onclick="showPopUp('MUGALQI','BERMANFAAT')">MUGALQI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SELALU INGIN MENOLONG"
                             onclick="showPopUp('LAZTRAZIZA','SELALU INGIN MENOLONG')">LAZTRAZIZA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('UMALERHA','MEMBAWA CAHAYA')">UMALERHA</span><span
+                            title="MEMBAWA CAHAYA" onclick="showPopUp('UMALERHA','MEMBAWA CAHAYA')">UMALERHA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="PEMBERI NAFKAH BAGI ORANG BANYAK"
                             onclick="showPopUp('VANTARUZ','PEMBERI NAFKAH BAGI ORANG BANYAK')">VANTARUZ</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="TAK TERLUPAKAN"
                             onclick="showPopUp('BANEZKILA','TAK TERLUPAKAN')">BANEZKILA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('RAGAZAM','PENUTUR KISAH')">RAGAZAM</span><span
+                            title="PENUTUR KISAH" onclick="showPopUp('RAGAZAM','PENUTUR KISAH')">RAGAZAM</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEYAKINI KEBENARAN"
                             onclick="showPopUp('RAGNA','MEYAKINI KEBENARAN')">RAGNA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MEYAKINI KEBENARAN DAN PASTI"
                             onclick="showPopUp('RAGNI','MEYAKINI KEBENARAN DAN PASTI')">RAGNI</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('TRAZIATHAR','MENGARAHKAN')">TRAZIATHAR</span><span
+                            title="MENGARAHKAN" onclick="showPopUp('TRAZIATHAR','MENGARAHKAN')">TRAZIATHAR</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('ZANTRIAZ','PEMAKMUR')">ZANTRIAZ</span><span
+                            title="PEMAKMUR" onclick="showPopUp('ZANTRIAZ','PEMAKMUR')">ZANTRIAZ</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="SELALU BISA MENENGAHI MASALAH"
                             onclick="showPopUp('PULSIKARDELLA','SELALU BISA MENENGAHI MASALAH')">PULSIKARDELLA</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
-                            onclick="showPopUp('TERITAZU','TAHU BATAS')">TERITAZU</span><span
+                            title="TAHU BATAS" onclick="showPopUp('TERITAZU','TAHU BATAS')">TERITAZU</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="MENGOLAH INFORMASI DENGAN MAKSIMAL"
                             onclick="showPopUp('RAZILIAN','MENGOLAH INFORMASI DENGAN MAKSIMAL')">RAZILIAN</span><span
                             class="tag is-link is-medium m-1" class="js-modal-trigger" data-target="modal-js-lemurian"
+                            title="JADI CONTOH UNTUK SESAMA"
                             onclick="showPopUp('BINATRIAS','JADI CONTOH UNTUK SESAMA')">BINATRIAS</span>
                     </div>
                 </div>
@@ -280,19 +357,54 @@
                 <button class="delete" aria-label="close"></button>
             </header>
             <section class="modal-card-body" id="modalBody"></section>
+            <div class="modal-card-foot buttons has-addons is-centered">
+                <button class="button is-success" onclick="addtoFirst()">Firstname</button>
+                <button class="button is-link" onclick="addtoMiddle()">Middlename</button>
+                <button class="button is-info" onclick="addtoLast()">LastName</button>
+            </div>
             <footer class="modal-card-foot p-1">
-              <button class="button is-fullwidth is-black">Tutup</button>
+                <button class="button is-fullwidth is-black">Tutup</button>
             </footer>
         </div>
     </div>
 
-<script>
-    function showPopUp(nama, arti) {
-        //alert(arti)
-        document.getElementById('modalTitle').innerHTML = nama;
-        document.getElementById('modalBody').innerHTML = arti;
-        openModal(document.getElementById('modal-js-lemurian'));
-    }
+    <script>
+        const cards = document.querySelectorAll('.tag');
+        const jml = cards.length;
+
+        function generateName() {
+            id = "artiNama1"
+            document.getElementById('nama1').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
+            document.getElementById('artiNama1').innerHTML = cards[Math.floor(Math.random() * jml)].title;
+            if((Math.floor(Math.random() * jml))%2==0){
+                document.getElementById('nama2').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
+                document.getElementById('artiNama2').innerHTML = cards[Math.floor(Math.random() * jml)].title;
+            }
+            document.getElementById('nama3').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
+            document.getElementById('artiNama3').innerHTML = cards[Math.floor(Math.random() * jml)].title;
+        }
+
+        function addtoFirst(){
+            document.getElementById('nama1').innerHTML = document.getElementById('modalTitle').innerHTML;
+            document.getElementById('artiNama1').innerHTML = document.getElementById('modalBody').innerHTML;
+        }
+
+        function addtoMiddle(){
+            document.getElementById('nama2').innerHTML = document.getElementById('modalTitle').innerHTML;
+            document.getElementById('artiNama2').innerHTML = document.getElementById('modalBody').innerHTML;
+        }
+
+        function addtoLast(){
+            document.getElementById('nama3').innerHTML = document.getElementById('modalTitle').innerHTML;
+            document.getElementById('artiNama3').innerHTML = document.getElementById('modalBody').innerHTML;
+        }
+
+        function showPopUp(nama, arti) {
+            //alert(arti)
+            document.getElementById('modalTitle').innerHTML = nama;
+            document.getElementById('modalBody').innerHTML = arti;
+            openModal(document.getElementById('modal-js-lemurian'));
+        }
 
         // Functions to open and close a modal
         function openModal($el) {
@@ -327,7 +439,10 @@
                 closeAllModals();
             }
         });
-</script>
+
+        generateName();
+    </script>
 
 </body>
+
 </html>
