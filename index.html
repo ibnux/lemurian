@@ -373,18 +373,20 @@
         const jml = cards.length;
 
         function generateName() {
-            id = "artiNama1"
-            document.getElementById('nama1').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
-            document.getElementById('artiNama1').innerHTML = cards[Math.floor(Math.random() * jml)].title;
-            if((Math.floor(Math.random() * jml))%2==0){
-                document.getElementById('nama2').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
-                document.getElementById('artiNama2').innerHTML = cards[Math.floor(Math.random() * jml)].title;
+            var rand = Math.floor(Math.random() * jml);
+            document.getElementById('nama1').innerHTML = cards[rand].innerText;
+            document.getElementById('artiNama1').innerHTML = cards[rand].title;
+            rand = Math.floor(Math.random() * jml);
+            if(rand%2==0){
+                document.getElementById('nama2').innerHTML = cards[rand].innerText;
+                document.getElementById('artiNama2').innerHTML = cards[rand].title;
             }else{
                 document.getElementById('nama2').innerHTML = '';
                 document.getElementById('artiNama2').innerHTML = '';
             }
-            document.getElementById('nama3').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
-            document.getElementById('artiNama3').innerHTML = cards[Math.floor(Math.random() * jml)].title;
+            rand = Math.floor(Math.random() * jml);
+            document.getElementById('nama3').innerHTML = cards[rand].innerText;
+            document.getElementById('artiNama3').innerHTML = cards[rand].title;
         }
 
         function addtoFirst(){
