@@ -379,6 +379,9 @@
             if((Math.floor(Math.random() * jml))%2==0){
                 document.getElementById('nama2').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
                 document.getElementById('artiNama2').innerHTML = cards[Math.floor(Math.random() * jml)].title;
+            }else{
+                document.getElementById('nama2').innerHTML = '';
+                document.getElementById('artiNama2').innerHTML = '';
             }
             document.getElementById('nama3').innerHTML = cards[Math.floor(Math.random() * jml)].innerText;
             document.getElementById('artiNama3').innerHTML = cards[Math.floor(Math.random() * jml)].title;
